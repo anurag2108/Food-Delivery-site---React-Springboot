@@ -1,0 +1,30 @@
+.banner{
+    background-image: url("https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?w=826&t=st=1704192550~exp=1704193150~hmac=901f3c2ae63125a19c5890b7fc707970e09f3646525490ae7e409a54d9cf37eb") ;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.cover{
+    width: 100%;
+    height: 90vh;
+    opacity: .4;
+    background: black;
+}
+
+.fadeout{
+    background-color: initial;
+    background-image: linear-gradient(180deg,hsla(0,0%,8%,0),hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#131313 68%,#0d0d0d0d);
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    bottom: -3rem;
+    height: 10vw;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 20;
+}

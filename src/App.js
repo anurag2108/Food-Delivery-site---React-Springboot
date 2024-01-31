@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import {darkTheme} from './theme/DarkTheme';
+import HomePage from './customer/pages/HomePage/HomePage';
 
 
 function App() {
@@ -9,9 +10,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
       <div>
-        <h1 className="text-3xl font-bold underline">
-        Hello world!
-        </h1>
+        <HomePage/>
       </div>
     </ThemeProvider>
   );
