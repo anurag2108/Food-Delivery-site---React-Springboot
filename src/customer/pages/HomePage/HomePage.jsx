@@ -1,6 +1,8 @@
 import React from 'react'
 import "./HomePage.css"
 import MultipleItemCarousel from './MultipleItemCarousel';
+import { restaurants } from '../../../Data/Restaurants';
+import RestaurantCard from './RestaurantCard.jsx'
 
 const HomePage = () => {
     return (
@@ -18,6 +20,16 @@ const HomePage = () => {
                     <p className='text-2xl font-semibold text-gray-400 py-3 pb-10'>Highlights</p>
                 </div>
                 <MultipleItemCarousel/>
+            </section>
+            <section className='px-5 lg:px-20'>
+                <div>
+                    <h1 className='text-2xl font-semibold text-gray-400 py-3'>
+                        Order From Our HandPicked Favourites
+                    </h1>
+                    <div className='flex flex-wrap items-center justify-around'>
+                        {restaurants.map((item)=><RestaurantCard item = {item}/>)}
+                    </div>
+                </div>
             </section>
         </div>
     );
