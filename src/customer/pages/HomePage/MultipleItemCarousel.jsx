@@ -1,7 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { highlights } from './Highlights';
-import carouselItem from './carouselItem';
+import CarouselItem from './CarouselItem';
+
 
 const MultipleItemCarousel = () => {
     const settings = {
@@ -16,7 +17,7 @@ const MultipleItemCarousel = () => {
     return (
         <div>
             <Slider {...settings}>
-                {highlights.map((item)=><carouselItem image={item.image} title = {item.title}/>)}
+                {highlights.map((item)=><CarouselItem image={item.image} title = {item.title}/>)}
             </Slider>
         </div>
     )

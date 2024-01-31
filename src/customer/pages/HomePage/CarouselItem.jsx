@@ -1,6 +1,6 @@
 import React from 'react'
 
-const carouselItem = ({image,title}) => {
+const CarouselItem = ({image,title}) => {
   return (
     <div className='flex flex-col justify-center items-center'>
         <img className = 'w-[10rem] h-[10rem] lg:w-[14rem] lg:h-[14rem] rounded-full object-cover object-center'src={image} alt=""/>
@@ -9,4 +9,4 @@ const carouselItem = ({image,title}) => {
   )
 }
 
-export default carouselItem;
+export default CarouselItem;
